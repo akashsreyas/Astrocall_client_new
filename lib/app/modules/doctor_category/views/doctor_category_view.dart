@@ -143,7 +143,7 @@ class DoctorCategoryView extends GetView<DoctorCategoryController> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                                    color: isSelected ? Colors.red[600] : Colors.orange[200],
+                                    color: isSelected ? Colors.red[600] : Colors.green[100],
                                   ),
                                   padding: const EdgeInsets.all(8.0),
                                   child: CachedNetworkImage(imageUrl: listCategory[index].iconUrl!),
