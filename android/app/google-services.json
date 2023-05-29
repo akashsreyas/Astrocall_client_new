@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "918003184772",
+    "firebase_url": "https://astro-call-4843f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "astro-call-4843f",
+    "storage_bucket": "astro-call-4843f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918003184772:android:6c86c9e531c257436f3ed1",
+        "android_client_info": {
+          "package_name": "com.astrocall.astro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkv0_oIRWtNe1smpCW8k_ipQ8OcPQlH7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918003184772:android:17473754ffb2f5fd6f3ed1",
+        "android_client_info": {
+          "package_name": "com.astrocall.astroclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkv0_oIRWtNe1smpCW8k_ipQ8OcPQlH7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918003184772:android:a98dac3f6e0b53d46f3ed1",
+        "android_client_info": {
+          "package_name": "com.for_random.new1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkv0_oIRWtNe1smpCW8k_ipQ8OcPQlH7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918003184772-60do7pu9p9bp6hpnfpd3tee5njfr8oth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

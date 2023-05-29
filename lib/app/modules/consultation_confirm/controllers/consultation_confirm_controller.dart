@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+import 'package:hallo_doctor_client/app/models/time_slot_model.dart';
+import 'package:hallo_doctor_client/app/modules/review/views/review_view.dart';
+import 'package:hallo_doctor_client/app/routes/app_pages.dart';
+import 'package:hallo_doctor_client/app/service/order_service.dart';
+import 'package:hallo_doctor_client/app/service/problem_service.dart';
+
+class ConsultationConfirmController extends GetxController {
+  //TimeSlot timeSlot = Get.arguments;
+  var problemVisible = false.obs;
+  TimeSlot timeSlot = Get.arguments[0]['timeSlot'];
+  String room = Get.arguments[0]['room'];
+  String token = Get.arguments[0]['token'];
+
+  @override
+  void onClose() {}
+
+  sendProblem(String problem) {
+    EasyLoading.show();
+    ProblemService().sendProblem(problem, timeSlot).then((value) {
+      Get.back();
+      Get.defaultDialog(
+          title: 'Info'.tr,
+          onConfirm: () => Get.back(),
+          middleText: 'Payment for '.tr +
+              timeSlot.doctor!.doctorName! +
+              ' will be delayed until the problem is resolved'.tr);
+      EasyLoading.dismiss();
+    });
+  }
+
+  confirmConsultation() async {
+    print("Inside confirmconsoltation"+room);
+    try {
+      EasyLoading.show();
+
+      await OrderService().confirmOrder(timeSlot,room);
+      EasyLoading.dismiss();
+      Get.offNamed(Routes.REVIEW, arguments: timeSlot);
+      //Get.toNamed(Routes.REVIEW, arguments: timeSlot);
+      // Get.offNamedUntil('/review', ModalRoute.withName('/appointment-detail'),
+      //     arguments: timeSlot);
+    } catch (e) {
+      EasyLoading.dismiss();
+      Fluttertoast.showToast(msg: e.toString());
+    }
+  }
+}
