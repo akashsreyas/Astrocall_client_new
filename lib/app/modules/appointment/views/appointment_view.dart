@@ -12,7 +12,7 @@ class AppointmentView extends GetView<AppointmentController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: ,
+      //new way,
       appBar: AppBar(
         backgroundColor: Styles.primaryBlueColor,
         title: Text('Appointment'.tr),
